@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "KoniraDesk.ClientTest": {
+      "commandName": "Project"
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    }
+  }
+}

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option csharp_namespace = "Koniradesk.server";
+package desk;
+
+service Koniradesk {
+  rpc GetKoniraDesk(GetKoniraDeskRequest) returns (GetKoniraDeskResponse);
+}
+
+message GetKoniraDeskRequest {
+  string name = 1;
+}
+
+message GetKoniraDeskResponse {
+  string message = 1;
+}
+
+message FrameMsg{
+    int32 format = 1;
+    int32 codec = 2;
+    string cod_origin = 3;
+    bytes frame = 4;    
+}
