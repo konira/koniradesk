@@ -1,0 +1,7 @@
+src/**/bin
+src/**/obj
+src/**/target
+deps
+target
+cmake-build-debug-visual-studio
+vcpkg_installed

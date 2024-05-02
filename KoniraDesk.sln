@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34707.107
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C521A819-FAE0-44CF-B355-84F0A408914C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "koniradesk-tests", "koniradesk-tests", "{EC7BC924-4456-4A5B-9D51-00948AFAA83B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleClient.test", "src\koniradesk-tests\ConsoleClient.test\ConsoleClient.test.csproj", "{D1F5939D-8A6E-47C2-AFB4-39B68846FE77}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Koniradesk.utests", "src\koniradesk-tests\Koniradesk.utests\Koniradesk.utests.csproj", "{06D708D2-FDAF-43E4-9122-7AD6D586CB6D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "koniradesk-client", "koniradesk-client", "{13D545AA-426F-4886-92BE-99971A8A4922}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Koniradeskt.interop", "src\koniradesk-client\Koniradeskt.interop\Koniradeskt.interop.csproj", "{00E789C1-C6C2-4AD6-9D24-5C77076B92C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "koniradesk-server", "koniradesk-server", "{F50177D2-54E1-4716-B070-D9528B79441F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Koniradesk.server", "src\Koniradesk-server\Koniradesk.server.csproj", "{DF915324-5AAD-4910-80AC-D5137AED59FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1F5939D-8A6E-47C2-AFB4-39B68846FE77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1F5939D-8A6E-47C2-AFB4-39B68846FE77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1F5939D-8A6E-47C2-AFB4-39B68846FE77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1F5939D-8A6E-47C2-AFB4-39B68846FE77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06D708D2-FDAF-43E4-9122-7AD6D586CB6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06D708D2-FDAF-43E4-9122-7AD6D586CB6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06D708D2-FDAF-43E4-9122-7AD6D586CB6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06D708D2-FDAF-43E4-9122-7AD6D586CB6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00E789C1-C6C2-4AD6-9D24-5C77076B92C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00E789C1-C6C2-4AD6-9D24-5C77076B92C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00E789C1-C6C2-4AD6-9D24-5C77076B92C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00E789C1-C6C2-4AD6-9D24-5C77076B92C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF915324-5AAD-4910-80AC-D5137AED59FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF915324-5AAD-4910-80AC-D5137AED59FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF915324-5AAD-4910-80AC-D5137AED59FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF915324-5AAD-4910-80AC-D5137AED59FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EC7BC924-4456-4A5B-9D51-00948AFAA83B} = {C521A819-FAE0-44CF-B355-84F0A408914C}
+		{D1F5939D-8A6E-47C2-AFB4-39B68846FE77} = {EC7BC924-4456-4A5B-9D51-00948AFAA83B}
+		{06D708D2-FDAF-43E4-9122-7AD6D586CB6D} = {EC7BC924-4456-4A5B-9D51-00948AFAA83B}
+		{13D545AA-426F-4886-92BE-99971A8A4922} = {C521A819-FAE0-44CF-B355-84F0A408914C}
+		{00E789C1-C6C2-4AD6-9D24-5C77076B92C8} = {13D545AA-426F-4886-92BE-99971A8A4922}
+		{F50177D2-54E1-4716-B070-D9528B79441F} = {C521A819-FAE0-44CF-B355-84F0A408914C}
+		{DF915324-5AAD-4910-80AC-D5137AED59FB} = {F50177D2-54E1-4716-B070-D9528B79441F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9234AE6F-EB34-4E7D-8EEF-834620DE1A1B}
+	EndGlobalSection
+EndGlobal

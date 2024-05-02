@@ -1,0 +1,4 @@
+[workspace]
+members = [ "src/koniradesk-client/koniradesk-commons", "src/koniradesk-client/koniradesk-infra","src/koniradesk-client/koniradesk-ui/src-tauri"]
+default-members = ["src/koniradesk-client/koniradesk-ui/src-tauri"]
+resolver = "2"
