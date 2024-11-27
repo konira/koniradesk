@@ -1,6 +1,0 @@
-[package]
-name = "konira_desk_libs"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
