@@ -1,0 +1,38 @@
+.remoteid_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.remoteid_container > input, .remoteid_container > button{
+    color: var(--primary-text-color);
+    border-radius: 0.5rem;
+    background-color: var(--background-color-light);
+    border: 2px solid var(--primary--border-color);
+}
+.remoteid_container > input{
+    width: 60%;
+    height: 3rem;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.remoteid_container > button{
+    width: 150px;
+    height: 3rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.remoteid_container > button:hover{
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+.remoteid_container > button:active{
+    background-color: var(--background-color-light);
+    color: var(--primary-text-color);
+}
