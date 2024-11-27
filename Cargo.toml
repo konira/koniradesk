@@ -1,11 +1,23 @@
 # [PROJECT_DIR]/Cargo.toml
 [workspace]
-members = ["Client/konira_desk_client_domain" , "Client/konira_desk_client_infra", "Client/konira_desk_client", "Server/konira_desk_server", "Server/konira_desk_server_domain", "Server/konira_desk_server_infra", "Shared/konira_desk_libs"]
+members = [
+    "Client/konira_desk_client_domain" ,
+    "Client/konira_desk_client_infra",
+    "Client/konira_desk_client_ui",
+    "Client/konira_desk_client_tauri",
+
+    "Server/konira_desk_server",
+    "Server/konira_desk_server_domain",
+    "Server/konira_desk_server_infra"
+]
+exclude = []
 resolver = "2"
 
 [workspace.dependencies]
+# shared
 tokio = { version = "1", features = ["full"] }
-
+enigo = {git="https://github.com/konira/enigo", branch="main"}
+scrap = { git = "https://github.com/konira/scrap", branch = "master" }
 # server deps
 xitca-http = { version = "0.6", features = ["http2", "http3", "openssl", "rustls"] }
 xitca-server = { version = "0.4", features = ["quic"] }
@@ -16,3 +28,4 @@ rustls = { version = "0.23", default-features = false, features = ["ring"] }
 rustls-pemfile = "2"
 tracing = { version = "0.1.40", default-features = false }
 tracing-subscriber = { version = "0.3.16", default-features = false, features = ["env-filter", "fmt"] }
+iced = { version = "0.13.1", features = ["image", "debug","tokio"] }
