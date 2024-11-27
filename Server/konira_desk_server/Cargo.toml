@@ -1,0 +1,21 @@
+[package]
+name = "konira_desk_server"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+konira_desk_server_domain = { path = "../konira_desk_server_domain" }
+konira_desk_server_infra = { path = "../konira_desk_server_infra" }
+
+tokio = {workspace = true}
+xitca-http = {workspace = true,features = ["http2", "http3", "openssl", "rustls"] }
+xitca-server = {workspace = true,features = ["quic"]}
+xitca-service = {workspace = true}
+
+openssl = {workspace = true}
+quinn = {workspace = true,features = ["ring"]}
+rustls ={workspace = true, default-features = false, features = ["ring"] }
+rustls-pemfile = {workspace = true}
+tracing = {workspace = true, default-features = false}
+tracing-subscriber ={workspace = true, default-features = false, features = ["env-filter", "fmt"]}

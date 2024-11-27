@@ -1,0 +1,11 @@
+[package]
+name = "konira_desk_client"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+konira_desk_client_domain = { path = "../konira_desk_client_domain" }
+konira_desk_client_infra = { path = "../konira_desk_client_infra" }
+
+tokio = {workspace = true}
+scrap = "0.5"
